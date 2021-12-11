@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Product Impacts | REAM Risk Predictor </title>
+    <!-- Boxicons CDN Link -->
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/jquery-ui.css'>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar active-sidebar">
+        <div class="logo-details">
+            <a href="#">
+                <img class="logo-icon" src="img/logo-icon.svg" alt="Logo" />
+                <img class="logo" src="img/Logo.svg" alt="Logo" />
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#" class="active" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                    <img src="img/home.svg" alt="Home" />
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-toggle="tooltip" data-placement="right" title="Supplier Impact">
+                    <img src="img/chart.svg" alt="chart" />
+                    <span class="links_name">Supplier Impact</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-toggle="tooltip" data-placement="right" title="Products Impact">
+                    <img src="img/product.svg" alt="Home" />
+                    <span class="links_name">Products Impact</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-toggle="tooltip" data-placement="right" title="Parts Impact">
+                    <img src="img/parts.svg" alt="Home" />
+                    <span class="links_name">Parts Impact</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-toggle="tooltip" data-placement="right" title="Customer Impact">
+                    <img src="img/customer.svg" alt="Home" />
+                    <span class="links_name">Customer Impact</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-toggle="tooltip" data-placement="right" title="Warehouse Impact">
+                    <img src="img/warehouse.svg" alt="Home" />
+                    <span class="links_name">Warehouse Impact</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-toggle="tooltip" data-placement="right" title="Communication">
+                    <img src="img/Communication.svg" alt="Home" />
+                    <span class="links_name">Communication</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" data-toggle="tooltip" data-placement="right" title="Mitigation">
+                    <img src="img/Mitigation.svg" alt="Home" />
+                    <span class="links_name">Mitigation</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Right Content -->
+    <section class="dashboard-section">
+        <nav class="mb-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="nav-left col-md-6">
+                        <div class="nav-left-inner justify-content-start">
+                            <a class="mobile-logo d-block d-lg-none" href="#">
+                                <img class="logo-icon" src="img/logo-icon.svg" alt="Logo">
+                            </a>
+                            <div class="sidebar-button">
+                                <a href="#">
+                                    <img src="img/bx-menu.svg" alt="Menu" />
+                                </a>
+                            </div>
+                            <div class="search d-none d-md-block">
+                                <input type="search" id="site-search" placeholder="Search">
+                            </div>
+                            <div class="nav-right-inner justify-content-end d-block d-md-none">
+                                <div class="mail">
+                                    <a href="#"><img src="img/Gmail.svg" alt="mail" /></a>
+                                </div>
+                                <div class="notification">
+                                    <a href="#"><img src="img/Bell.svg" alt="Bell" /></a>
+                                </div>
+                                <div class="user-profile">
+                                    <div class="btn-group">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-display="static" aria-expanded="false">
+                                            <div class="user-img">
+                                                <img src="img/user-img.png" alt="User Profile" />
+                                            </div>
+                                            <span class="user-name d-none d-md-block">
+                                                Hello, <span>Jason Doe</span>
+                                            </span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-right">
+                                            <a class="dropdown-item" href="#">Profile</a>
+                                            <a class="dropdown-item" href="#">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-right col-md-6">
+                        <div class="nav-right-inner justify-content-end d-none d-md-block">
+                            <div class="mail">
+                                <a href="#"><img src="img/Gmail.svg" alt="mail" /></a>
+                            </div>
+                            <div class="notification">
+                                <a href="#"><img src="img/Bell.svg" alt="Bell" /></a>
+                            </div>
+                            <div class="user-profile">
+                                <div class="btn-group">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-display="static" aria-expanded="false">
+                                        <div class="user-img">
+                                            <img src="img/user-img.png" alt="User Profile" />
+                                        </div>
+                                        <span class="user-name d-none d-md-block">
+                                            Hello, <span>Jason Doe</span>
+                                        </span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-right">
+                                        <a class="dropdown-item" href="#">Profile</a>
+                                        <a class="dropdown-item" href="#">Logout</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search d-block d-md-none mt-3">
+                            <input type="search" id="site-search" placeholder="Search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+
+
+            <!-- Title -->
+            <div class="main-title">
+                <div class="row align-items-center">
+                    <div class="col-md-8 mb-4">
+                        <h1>Product Impacts</h1>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="form-label-group">
+                            <label>Impacted Customers</label>
+                            <div class="user-icon">
+                                <select class="custom-select select-arrow floating-labels">
+                                    <option selected disabled>Impacted Customers</option>
+                                    <option value="ABC Customer">ABC Customer</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noted -->
+            <div class="notification mb-4">
+                <div class="notification-inner bg-white py-2 px-3">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p class="mb-0">Food, High Wind Watches In Rhode Island For October Nor'Easter</p>
+                        </div>
+                        <div class="col-md-5 text-right">
+                            <img class="mr-1" src="img/date-icon.svg" alt="Date" /> Tuseday augest 11th 2020, 03:57 UTC
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---- Score box --->
+            <div class="row score-box-wrap">
+                <div class="col-md-4 mb-4">
+                    <div class="card-box card-box-orange score-card-box p-4">
+                        <div class="score-box align-items-center d-flex">
+                            <div class="score-box-lhs">
+                                <div class="score-icon justify-content-center align-items-center d-flex">
+                                    <img src="img/risk-score-icons.svg">
+                                </div>
+                            </div>
+                            <div class="score-box-rhs">
+                                <h2>5.12%</h2>
+                                <div class="score-sub-text align-items-center d-flex">
+                                    <span class="score-sub-icon">
+                                        <img src="img/icon-trending-up.svg">
+                                    </span>
+                                    <span class="score-sub-text">Risk Score</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card-box card-box-parpal score-card-box p-4">
+                        <div class="score-box align-items-center d-flex">
+                            <div class="score-box-lhs">
+                                <div class="score-icon justify-content-center align-items-center d-flex bg-light-purple">
+                                    <img src="img/loss-icon.svg">
+                                </div>
+                            </div>
+                            <div class="score-box-rhs">
+                                <h2>$50000</h2>
+                                <div class="score-sub-text align-items-center d-flex">
+                                    <span class="score-sub-icon">
+                                        <img src="img/icon-trending-down.svg">
+                                    </span>
+                                    <span class="score-sub-text">Loss</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card-box card-box-green score-card-box p-4">
+                        <div class="score-box align-items-center d-flex">
+                            <div class="score-box-lhs">
+                                <div class="score-icon justify-content-center align-items-center d-flex bg-light-green">
+                                    <img src="img/day-Icons.svg">
+                                </div>
+                            </div>
+                            <div class="score-box-rhs">
+                                <h2>5.12%</h2>
+                                <div class="score-sub-text align-items-center d-flex">
+                                    <span class="score-sub-icon">
+                                        <img src="img/icon-trending-up.svg">
+                                    </span>
+                                    <span class="score-sub-text">Risk Score</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chart -->
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <div class="card-box">
+                        <div class="card-head p-3">
+                            <div class="card-head-title">
+                                <span class="card-icon"><img src="img/title-Icons.svg"></span>
+                                <span class="card-title-text">Network Graph</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="no-found">
+                                <div class="no-found-inner">
+                                    <img src="img/no-found-icon.svg">
+                                    <span>Chart will be show here</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Impacted Products + Alternate Supplier List + Supplier Impacted -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card-box">
+                        <div class="card-head p-3">
+                            <div class="card-head-title">
+                                <span class="card-icon"><img src="img/title-Icons.svg"></span>
+                                <span class="card-title-text">Impacted Products</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <!--Impacted Products -->
+                            <ul class="wrap-inner-box">
+                                <li>
+                                    <img src="img/impacted-products-icon.svg">
+                                    <span>Electric motor</span>
+                                </li>
+                                <li>
+                                    <img src="img/impacted-products-icon.svg">
+                                    <span>Tyre</span>
+                                </li>
+                                <li>
+                                    <img src="img/impacted-products-icon.svg">
+                                    <span>Computer</span>
+                                </li>
+                                <li>
+                                    <img src="img/impacted-products-icon.svg">
+                                    <span>Television</span>
+                                </li>
+                                <li>
+                                    <img src="img/impacted-products-icon.svg">
+                                    <span>E-bike</span>
+                                </li>
+                                <li>
+                                    <img src="img/impacted-products-icon.svg">
+                                    <span>Battery charger</span>
+                                </li>
+                            </ul>
+                            <!-- Impacted Products -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card-box">
+                        <div class="card-head p-3">
+                            <div class="card-head-title">
+                                <span class="card-icon"><img src="img/title-Icons.svg"></span>
+                                <span class="card-title-text">Alternate Supplier List</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <!-- Alternate Supplier List -->
+                            <ul class="wrap-inner-box">
+                                <li>
+                                    <img src="img/alternate-supplier-list.svg">
+                                    <span>Sabic</span>
+                                </li>
+                            </ul>
+                            <!-- Alternate Supplier List -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card-box">
+                        <div class="card-head p-3">
+                            <div class="card-head-title">
+                                <span class="card-icon"><img src="img/title-Icons.svg"></span>
+                                <span class="card-title-text">Supplier Impacted</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <!--Supplier Impacted -->
+                            <ul class="wrap-inner-box">
+                                <li>
+                                    <img src="img/supplier-impacted-icon.svg">
+                                    <span>APC Company</span>
+                                </li>
+                                <li>
+                                    <img src="img/supplier-impacted-icon.svg">
+                                    <span>Blockchain LLC</span>
+                                </li>
+                                <li>
+                                    <img src="img/supplier-impacted-icon.svg">
+                                    <span>Hi-Lume Corporation</span>
+                                </li>
+                                <li>
+                                    <img src="img/supplier-impacted-icon.svg">
+                                    <span>Gearcor, Inc.</span>
+                                </li>
+                                <li>
+                                    <img src="img/supplier-impacted-icon.svg">
+                                    <span>W. Kintz</span>
+                                </li>
+                                <li>
+                                    <img src="img/supplier-impacted-icon.svg">
+                                    <span>Others</span>
+                                </li>
+                            </ul>
+                            <!-- Supplier Impacted -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--- Inventory Threshold + Demand Forecasting --->
+            <div class="row">
+                <div class="col-md-6  mb-4">
+                    <div class="card-box">
+                        <div class="card-head p-3">
+                            <div class="card-head-title">
+                                <span class="card-icon"><img src="img/title-Icons.svg"></span>
+                                <span class="card-title-text">Inventory Threshold</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="no-found">
+                                <div class="no-found-inner">
+                                    <img src="img/no-found-icon.svg">
+                                    <span>Chart will be show here</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6  mb-4">
+                    <div class="card-box">
+                        <div class="card-head p-3">
+                            <div class="card-head-title">
+                                <span class="card-icon"><img src="img/title-Icons.svg"></span>
+                                <span class="card-title-text">Demand Forecasting</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="no-found">
+                                <div class="no-found-inner">
+                                    <img src="img/no-found-icon.svg">
+                                    <span>Chart will be show here</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        <!-- </div> -->
+        <!-- Footer -->
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="left-footer col-md-6">
+                        <p>REAM Risk Predictor © 2012 - 2021</p>
+                    </div>
+                    <div class="right-footer col-md-6">
+                        <ul class="justify-content-end">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Puchase</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery-ui.js"></script>
+</body>
+
+</html>
