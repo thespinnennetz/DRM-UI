@@ -1807,7 +1807,7 @@ footer .right-footer ul li a:hover {
     margin-bottom: 16px;
 } 
 .server-section p {
-    font-weight: 600;
+    font-weight: normal;
     font-size: 18px;
     line-height: 22px;
     color: rgba(255, 255, 255, 0.5);
