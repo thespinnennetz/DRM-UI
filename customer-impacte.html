@@ -159,15 +159,14 @@
                         <h1>Customer Impacte</h1>
                     </div>
                     <div class="col-md-4  mb-4">
-                        <div class="form-label-group">
+                        <div class="form-label-group active">
                             <label>Impacted Customers</label>
                             <div class="user-icon">
-                                <select class="custom-select select-arrow floating-labels">
-                                    <option selected disabled>Impacted Customers</option>
-                                    <option value="ABC Customer">ABC Customer</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
+                                <select class="custom-select select-arrow floating-labels custImpacte-select">
+                                    <option selected value="ABCCustomer">ABC Customer</option>
+                                    <option value="One">One</option>
+                                    <option value="Two">Two</option>
+                                    <option value="Three">Three</option>
                                 </select>
                             </div>
                         </div>
@@ -177,10 +176,10 @@
 
             <!-- Noted -->
             <div class="notification mb-4">
-                <div class="notification-inner bg-white py-2 px-3">
+                <div class="notification-inner bg-white py-3 px-3">
                     <div class="row">
                         <div class="col-md-7">
-                            <p class="mb-0">Food, High Wind Watches In Rhode Island For October Nor'Easter</p>
+                            <p class="mb-0 font-weight-bold">Food, High Wind Watches In Rhode Island For October Nor'Easter</p>
                         </div>
                         <div class="col-md-5 text-right">
                             <img class="mr-1" src="img/date-icon.svg" alt="Date" /> Tuseday augest 11th 2020, 03:57 UTC
@@ -200,7 +199,10 @@
                                 </div>
                             </div>
                             <div class="score-box-rhs">
-                                <h2>5.12%</h2>
+                                <h2 class="showCmd ABCCustomer">5.12%</h2>
+                                <h2 class="showCmd One">6.12%</h2>
+                                <h2 class="showCmd Two">7.12%</h2>
+                                <h2 class="showCmd Three">8.12%</h2>
                                 <div class="score-sub-text align-items-center d-flex">
                                     <span class="score-sub-icon">
                                         <img src="img/icon-trending-up.svg">
@@ -215,12 +217,15 @@
                     <div class="card-box card-box-parpal score-card-box p-4">
                         <div class="score-box align-items-center d-flex">
                             <div class="score-box-lhs">
-                                <div class="score-icon justify-content-center align-items-center d-flex bg-light-purple">
+                                <div class="score-icon justify-content-center align-items-center d-flex">
                                     <img src="img/loss-icon.svg">
                                 </div>
                             </div>
                             <div class="score-box-rhs">
-                                <h2>$50000</h2>
+                                <h2 class="showCmd ABCCustomer">$50000</h2>
+                                <h2 class="showCmd One">$60000</h2>
+                                <h2 class="showCmd Two">$70000</h2>
+                                <h2 class="showCmd Three">$80000</h2>
                                 <div class="score-sub-text align-items-center d-flex">
                                     <span class="score-sub-icon">
                                         <img src="img/icon-trending-down.svg">
@@ -235,12 +240,15 @@
                     <div class="card-box card-box-green score-card-box p-4">
                         <div class="score-box align-items-center d-flex">
                             <div class="score-box-lhs">
-                                <div class="score-icon justify-content-center align-items-center d-flex bg-light-green">
+                                <div class="score-icon justify-content-center align-items-center d-flex">
                                     <img src="img/day-Icons.svg">
                                 </div>
                             </div>
                             <div class="score-box-rhs">
-                                <h2>5.12%</h2>
+                                <h2 class="showCmd ABCCustomer">6.21%</h2>
+                                <h2 class="showCmd One">9.21%</h2>
+                                <h2 class="showCmd Two">3.21%</h2>
+                                <h2 class="showCmd Three">4.21%</h2>
                                 <div class="score-sub-text align-items-center d-flex">
                                     <span class="score-sub-icon">
                                         <img src="img/icon-trending-up.svg">
@@ -286,7 +294,7 @@
                             </div>
                         </div>
                         <div class="card-body p-4">
-                            <ul class="events-list">
+                            <ul class="events-list showCmd ABCCustomer">
                                 <li class="events-item">
                                     <img class="event-icon" src="img/Impacting-events.svg" alt="Impacting Events">
                                     <p>Victorians warned to brace for aftershocks after states largest ever earthquake
@@ -301,6 +309,37 @@
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
                                 </li> -->
                             </ul>
+                            <ul class="events-list showCmd One">
+                                <li class="events-item">
+                                    <img class="event-icon" src="img/Impacting-events.svg" alt="Impacting Events">
+                                    <p>Victorians warned to brace for aftershocks after states largest ever earthquake
+                                    </p>
+                                </li>
+                                <li class="events-item">
+                                    <img class="event-icon" src="img/Impacting-events.svg" alt="Impacting Events">
+                                    <p>Victorians warned to brace for aftershocks after states largest ever earthquake
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="events-list showCmd Two">
+                                <li class="events-item">
+                                    <img class="event-icon" src="img/Impacting-events.svg" alt="Impacting Events">
+                                    <p>Victorians warned to brace for aftershocks after states largest ever earthquake
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="events-list showCmd Three">
+                                <li class="events-item">
+                                    <img class="event-icon" src="img/Impacting-events.svg" alt="Impacting Events">
+                                    <p>Aftershocks after states largest ever earthquake
+                                    </p>
+                                </li>
+                                <li class="events-item">
+                                    <img class="event-icon" src="img/Impacting-events.svg" alt="Impacting Events">
+                                    <p>Victorians warned to brace for aftershocks after states largest ever earthquake
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -314,7 +353,79 @@
                         </div>
                         <div class="card-body p-4">
                             <div class="setScroll-250">
-                                <ul class="consumables-list mb-0">
+                                <ul class="consumables-list mb-0 showCmd ABCCustomer">
+                                    <li class="consumables-item">
+                                        <div class="consumables-head">
+                                            <img class="consumables-icon" src="img/consumables.svg" alt="consumables">
+                                            <h3>Non Consumables</h3>
+                                        </div>
+                                        <div class="contain-part">
+                                            <span>Ebike Motor</span>
+                                            <span>Voltage Divider</span>
+                                            <span>Stators</span>
+                                            <span>Cabinet</span>
+                                            <span>Ebike Battery</span>
+                                            <span>Display Panel</span>
+                                            <span>Speaker System</span>
+                                            <span>Charging rate regulator</span>
+                                            <span>RAM</span>
+                                            <span>SSD/HDD</span>
+                                            <span>PSU</span>
+                                            <span>Mother board</span>
+                                            <span>Voltage Regulators</span>
+                                            <span>Sidewall</span>
+                                            <span>Electronic Accessories</span>
+                                            <span>Bridge rectifier</span>
+                                            <span>Error amplifier</span>
+                                            <span>Ebike controller</span>
+                                            <span>Rotors</span>
+                                            <span>Wire</span>
+                                            <span>Electric interconnectors</span>
+                                            <span>Mechanical accessories</span>
+                                            <span>Housings</span>
+                                            <span>Tread</span>
+                                            <span>Magnets</span>
+                                            <span>Housing</span>
+                                            <span>Inner Liner</span>
+                                            <span>Beads</span>
+                                            <span>Processor</span>
+                                            <span>Belt</span>
+                                            <span>Ebike kit</span>
+                                            <span>Body ply</span>
+                                            <span>Fuse</span>
+                                            <span>Apex</span>
+                                        </div>
+                                    </li>
+                                    <li class="consumables-item">
+                                        <div class="consumables-head">
+                                            <img class="consumables-icon" src="img/consumables.svg" alt="consumables">
+                                            <h3>Consumables</h3>
+                                        </div>
+                                        <div class="contain-part">
+                                            <span>Insulation paper</span>
+                                            <span>Insulation Sleeve</span>
+                                            <span>Thermal paste</span>
+                                            <span>Varnish</span>
+                                            <span>Lubricant</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="consumables-list mb-0 showCmd One">
+                                    <li class="consumables-item">
+                                        <div class="consumables-head">
+                                            <img class="consumables-icon" src="img/consumables.svg" alt="consumables">
+                                            <h3>Consumables</h3>
+                                        </div>
+                                        <div class="contain-part">
+                                            <span>Insulation paper</span>
+                                            <span>Insulation Sleeve</span>
+                                            <span>Thermal paste</span>
+                                            <span>Varnish</span>
+                                            <span>Lubricant</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="consumables-list mb-0 showCmd Two">
                                     <li class="consumables-item">
                                         <div class="consumables-head">
                                             <img class="consumables-icon" src="img/consumables.svg" alt="consumables">
@@ -389,34 +500,46 @@
                         </div>
                         <div class="card-body p-4">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <div class="bg-light-orange">
+                                <div class="col-md-6 mb-3">
+                                    <div class="card-conversion-box bg-light-orange">
                                         <div class="bg-inner-box">
-                                            <h5 class="text-orange">0.01</h5>
+                                            <h5 class="text-orange showCmd ABCCustomer">0.01</h5>
+                                            <h5 class="text-orange showCmd One">0.03</h5>
+                                            <h5 class="text-orange showCmd Two">0.05</h5>
+                                            <h5 class="text-orange showCmd Three">0.07</h5>
                                             <span>Days Inventory Outstanding</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="bg-light-parpal">
+                                <div class="col-md-6 mb-3">
+                                    <div class="card-conversion-box bg-light-parpal">
                                         <div class="bg-inner-box">
-                                            <h5 class="text-parpal">186.86</h5>
+                                            <h5 class="text-parpal showCmd ABCCustomer">186.86</h5>
+                                            <h5 class="text-parpal showCmd One">54.03</h5>
+                                            <h5 class="text-parpal showCmd Two">34.05</h5>
+                                            <h5 class="text-parpal showCmd Three">75.07</h5>
                                             <span>Days Sales Outstanding</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="bg-light-green">
+                                <div class="col-md-6 mb-3">
+                                    <div class="card-conversion-box bg-light-green">
                                         <div class="bg-inner-box">
-                                            <h5 class="text-green">34.95</h5>
+                                            <h5 class="text-green showCmd ABCCustomer">34.95</h5>
+                                            <h5 class="text-green showCmd One">23.95</h5>
+                                            <h5 class="text-green showCmd Two">84.05</h5>
+                                            <h5 class="text-green showCmd Three">35.07</h5>
                                             <span>Days Payable Outstanding</span>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="bg-light-blue">
+                                <div class="col-md-6 mb-3">
+                                    <div class="card-conversion-box bg-light-blue">
                                         <div class="bg-inner-box">
-                                            <h5 class="text-blue">151.92</h5>
+                                            <h5 class="text-blue showCmd ABCCustomer">151.92</h5>
+                                            <h5 class="text-blue showCmd One">323.95</h5>
+                                            <h5 class="text-blue showCmd Two">54.05</h5>
+                                            <h5 class="text-blue showCmd Three">5.07</h5>
                                             <span>Cash Flaw</span>
                                         </div>
                                     </div>
@@ -512,6 +635,17 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/jquery-ui.js"></script>
+    <script>
+        $(document).ready(function() {
+            var defaultVal = $('.custImpacte-select').val();
+            $('.showCmd.' + defaultVal).show();
+        });
+        $(document).on('change', '.custImpacte-select', function() {
+            var selectVal = $(this).val();
+            $('.showCmd').hide();
+            $('.showCmd.' + selectVal).show();
+        });
+    </script>
 </body>
 
 </html>

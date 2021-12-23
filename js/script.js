@@ -1,14 +1,14 @@
 // Menu
-$(document).ready(function(){
-    if($('.sidebar').hasClass('active-sidebar')){
+$(document).ready(function() {
+    if ($('.sidebar').hasClass('active-sidebar')) {
         $('body').addClass("menuOpen");
     }
 })
 $(".sidebar-button a, .menu-overlay").click(function() {
-    if($('.sidebar').hasClass('active-sidebar')){
+    if ($('.sidebar').hasClass('active-sidebar')) {
         $('.sidebar').removeClass("active-sidebar");
         $('body').removeClass("menuOpen");
-    }else{
+    } else {
         $('.sidebar').addClass("active-sidebar");
         $('body').addClass("menuOpen");
     }
